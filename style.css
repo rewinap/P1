@@ -1,0 +1,62 @@
+body{
+	background-color: #ddd;
+	font-size:18px;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 2px white;
+	
+}
+
+h1{
+	font-family: 'New Tegomin', serif;
+	font-size: 80px;
+	margin: 50px 0;
+	text-align: center;
+}	
+
+.container{
+	width:600px;
+	background-color: white;
+	margin: auto;
+	padding: 20px;
+	box-shadow: 0 0 3px 4px rgba(0,0,0, .5);
+	border-radius: 12px;
+
+}
+
+.gallery li{
+	width:120px;
+	height: 120px;
+	border-radius: 50%;
+	border:4px solid black;
+	margin:20px;
+	float: left;
+	margin-right: 20px;
+	position: relative;
+}
+
+.clear{
+	clear: both;
+}
+.gallery li span, .gallery li img,  .gallery li{
+	border-radius: 50%;
+}
+
+.gallery li span{
+	display: block;
+	width:120px;
+	height: 120px;
+	position: absolute;
+	background-color: rgba(200,200,200, .4);
+	top: 0;
+	text-align:center;
+	line-height: 120px;
+	color: black;
+	opacity: 0;
+	transition: .3s;
+	transform:scale(0) rotate(0);
+}
+
+.gallery li a:hover span{
+	opacity: 1;
+	transform:scale(1) rotate(360deg);
+}
